@@ -21,3 +21,19 @@
   align-items: center;
   justify-content: center;
 }
+
+/* HoloCure background recreation for hero banner. */
+#holocureBackground {
+  background: linear-gradient(#4abef9, #2992d9);
+}
+
+#holocureBars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("/img/bars.png");
+}
+
+.holocureContainer {
+  z-index: 1;
+}
