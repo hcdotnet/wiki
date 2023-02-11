@@ -41,10 +41,10 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/steviegt6/holocure-wiki/tree/master/",
         },
-        blog: {
+        /*blog: {
           showReadingTime: true,
           editUrl: "https://github.com/steviegt6/holocure-wiki/tree/master/",
-        },
+        },*/
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -61,7 +61,7 @@ const config = {
         title: "HoloCure Wiki",
         logo: {
           alt: "HoloCure Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
