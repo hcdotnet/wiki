@@ -25,6 +25,7 @@
 /* HoloCure background recreation for hero banner. */
 #holocureBackground {
   background: linear-gradient(#4abef9, #2992d9);
+  color: white;
 }
 
 #holocureBars {
@@ -32,8 +33,18 @@
   height: 100%;
   position: absolute;
   background: url("/img/bars.png");
+  animation: barAnimation 3.5s linear infinite;
 }
 
 .holocureContainer {
   z-index: 1;
+}
+
+@keyframes barAnimation {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -420px;
+  }
 }

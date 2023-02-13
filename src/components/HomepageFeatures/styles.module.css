@@ -5,7 +5,17 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  height: 175px;
+}
+
+.featureItem {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.featureButton {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
 }

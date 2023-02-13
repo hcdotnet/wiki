@@ -16,16 +16,18 @@ function HomepageHeader() {
     >
       <div id={styles.holocureBars} />
       <div className={"container " + styles.holocureContainer}>
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h1 className="hero__title">
+          Welcome to the <abbr title={siteConfig.title}>HCW</abbr>
+        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        {/*<div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
             Docusaurus Tutorial - 5min ⏱️
           </Link>
-        </div>
+  </div>*/}
       </div>
     </header>
   );
@@ -34,10 +36,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`Main Page`}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

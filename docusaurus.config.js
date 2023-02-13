@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "HoloCure Wiki",
-  tagline: "Free, community-maintained HoloCure encyclopedia",
+  tagline: "The unofficial, free, community-maintained HoloCure encyclopedia",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -86,6 +86,10 @@ const config = {
               {
                 label: "HoloCure",
                 to: "/docs/games/holocure",
+              },
+              {
+                label: "See All",
+                to: "/docs/games",
               },
             ],
           },
