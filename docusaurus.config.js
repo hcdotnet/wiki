@@ -98,6 +98,15 @@ const config = {
             ],
           },
           {
+            title: "Contributing",
+            items: [
+              {
+                label: "Meta Documentation",
+                href: "/docs/meta",
+              },
+            ],
+          },
+          {
             title: "Community",
             items: [
               {
