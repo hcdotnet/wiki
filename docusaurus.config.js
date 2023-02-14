@@ -64,7 +64,7 @@ const config = {
       announcementBar: {
         id: "wip_and_translate",
         content:
-          "This wiki is a work in progress. Learn how to <a href='/docs/meta'>contribute</a> or <a href='/docs/meta/translating'>translate</a>!",
+          "This wiki is a work in progress. Learn how to <a href='/docs/meta/contributing'>contribute</a> or <a href='/docs/meta/translating'>translate</a>!",
         isCloseable: true,
       },
       navbar: {
