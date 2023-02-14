@@ -1,0 +1,50 @@
+.infobox {
+  max-width: 22em;
+
+  font-size: 88%;
+  line-height: 1.5em;
+
+  float: right;
+  clear: right;
+
+  /*background-color: var(--ifm-background-color);
+  padding: 8px;*/
+}
+
+.infobox > tbody > tr {
+  background-color: var(
+    --fm-table-background
+  ); /* var(--ifm-table-stripe-background) */
+}
+
+.infobox > tbody,
+.infobox > tbody > tr,
+.infobox > tbody > tr > th,
+.infobox > tbody > tr > td {
+  border: none;
+}
+
+.infobox > tbody {
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+}
+
+.infoboxTitle {
+  font-weight: bold;
+  font-size: 125%;
+  text-align: center;
+  padding: 0.2em;
+}
+
+.infoboxCaption {
+  text-align: center;
+}
+
+.infoboxLabel,
+.infoboxData {
+  text-align: left;
+  vertical-align: top;
+}
+
+.infoboxData {
+  text-align: left;
+}
