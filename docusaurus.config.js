@@ -57,6 +57,16 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/social-card.png",
+      colorMode: {
+        defaultMode: "light",
+        respectPrefersColorScheme: true,
+      },
+      announcementBar: {
+        id: "wip_and_translate",
+        content:
+          "This wiki is a work in progress. Learn how to <a href='/docs/meta'>contribute</a> or <a href='/docs/meta/translating'>translate</a>!",
+        isCloseable: true,
+      },
       navbar: {
         title: "HoloCure Wiki",
         logo: {
@@ -69,6 +79,12 @@ const config = {
             docId: "games/holocure",
             position: "left",
             label: "HoloCure",
+          },
+          {
+            type: "doc",
+            docId: "meta/index",
+            position: "left",
+            label: "Meta",
           },
           /*{ to: "/blog", label: "Blog", position: "left" },*/
           {

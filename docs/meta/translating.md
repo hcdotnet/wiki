@@ -1,0 +1,66 @@
+---
+sidebar_position: 3
+---
+
+# Translating
+
+The HoloCure wiki is written English-first, but support for other languages is encouraged and sought after.
+
+Before continuing, ensure you have read the [contributing guide](/docs/meta/contributing.md).
+
+When contributing a new language, it is requested (but not required) that you add the language in a pull request before actually getting started on your specific page translations.
+
+## Adding a new language
+
+If the language you are looking to contribute is not yet supported, you will have to register it.
+
+```js title="docusaurus.config.js"
+module.exports = {
+    ...
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', '<your-locale>'],
+    },
+    ...
+}
+```
+
+## Translating a page
+
+Assuming you are translating a page that lies within the `/docs/` directory, you can safely copy the file to the corresponding directory within the `/i18n/<your-locale>/` directory (create `/<your-locale>/` if it does not yet exist).
+
+## Testing your translations
+
+Once you are ready to test a translation, you can start the site on the locale you are working on:
+
+```bash
+npm run start -- --locale <your-locale>
+```
+
+:::caution
+
+In development, you can only use one locale at the time. Production builds do not have this limit.
+
+:::
+
+Once you have started the site, your translations will be live at [http://localhost:3000/&lt;your-locale&gt;/](http://localhost:3000/<your-locale>/).
+
+## Build your translations
+
+Once you have finished your translations, you will want to build the site with your translations included.
+
+```bash
+npm run build -- --locale <your-locale>
+```
+
+You can also build the entire site with all locales:
+
+```bash
+npm run build
+```
+
+:::info
+
+Unlike development builds, production builds are not limited to only a single locale.
+
+:::
