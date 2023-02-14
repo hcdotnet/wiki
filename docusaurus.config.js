@@ -76,7 +76,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "games/holocure",
+            docId: "games/holocure/index",
             position: "left",
             label: "HoloCure",
           },
@@ -101,7 +101,7 @@ const config = {
       footer: {
         links: [
           {
-            title: "Games",
+            title: "Games & Software",
             items: [
               {
                 label: "HoloCure",
